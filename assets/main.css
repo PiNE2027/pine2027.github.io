@@ -908,3 +908,276 @@ footer {
     }
 
 }
+
+/* =========================================================
+   ABSTRACT SUBMISSION PAGE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   INTRO
+   --------------------------------------------------------- */
+
+.abstract-intro {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.abstract-intro p {
+    margin: 0 0 22px;
+}
+
+.abstract-intro p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   ABSTRACT CATEGORIES
+   --------------------------------------------------------- */
+
+.abstract-categories {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.abstract-category {
+    min-height: 100px;
+
+    padding: 25px 30px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    text-align: center;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+.abstract-category:hover {
+    color: white;
+
+    background: rgba(123, 44, 191, 0.14);
+}
+
+.abstract-category span {
+    margin-left: 6px;
+
+    color: var(--text-muted);
+
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+
+/* ---------------------------------------------------------
+   ABSTRACT SUBMISSION
+   --------------------------------------------------------- */
+
+.abstract-submission {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.abstract-submission > p {
+    margin: 0 0 25px;
+}
+
+
+/* Submission status */
+
+.submission-status {
+    display: inline-block;
+
+    margin: 10px 0 30px;
+
+    padding: 13px 25px;
+
+    color: white;
+
+    background: rgba(123, 44, 191, 0.18);
+
+    border: 1px solid var(--purple);
+
+    border-radius: 5px;
+
+    font-weight: 700;
+}
+
+
+/* Actual submission button */
+
+.submission-button {
+    display: inline-block;
+
+    margin: 10px 0 30px;
+
+    padding: 15px 32px;
+
+    color: white;
+
+    background: var(--purple);
+
+    border: 1px solid var(--purple-light);
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.submission-button:hover {
+    color: white;
+
+    background: var(--purple-light);
+
+    transform: translateY(-2px);
+}
+
+
+/* Small note */
+
+.submission-note {
+    color: var(--text-muted);
+
+    font-size: 0.9rem;
+}
+
+
+/* ---------------------------------------------------------
+   PRESENTATION FORMAT
+   --------------------------------------------------------- */
+
+.presentation-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.presentation-content p {
+    margin: 0 0 24px;
+}
+
+.presentation-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   DEADLINE
+   --------------------------------------------------------- */
+
+.deadline {
+    max-width: 700px;
+
+    margin: 50px auto 0;
+
+    padding: 28px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.deadline-label {
+    color: var(--text-muted);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.deadline-value {
+    color: white;
+
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   BURSARIES
+   --------------------------------------------------------- */
+
+.bursary-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.bursary-content p {
+    margin: 0 0 24px;
+}
+
+
+/* ---------------------------------------------------------
+   ABSTRACT MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .abstract-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .abstract-category {
+        min-height: 80px;
+
+        padding: 22px 20px;
+    }
+
+    .deadline {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
