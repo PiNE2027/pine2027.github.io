@@ -687,3 +687,224 @@ footer {
         text-align: center;
     }
 }
+
+/* =========================================================
+   REGISTRATION PAGE
+   ========================================================= */
+
+.registration-content {
+    max-width: 800px;
+    margin: 0 auto;
+
+    text-align: center;
+    color: var(--text-soft);
+}
+
+.registration-content p {
+    margin: 0 auto 25px;
+}
+
+
+/* Registration status */
+
+.registration-status {
+    display: inline-block;
+
+    margin-bottom: 35px;
+    padding: 10px 22px;
+
+    color: white;
+
+    background: rgba(123, 44, 191, 0.18);
+
+    border: 1px solid var(--purple);
+
+    border-radius: 4px;
+
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+
+
+/* Registration price */
+
+.registration-price {
+    margin: 20px 0 35px;
+
+    color: white;
+
+    font-size: clamp(3rem, 7vw, 5rem);
+    line-height: 1;
+
+    font-weight: 800;
+    letter-spacing: -0.04em;
+}
+
+.registration-price::after {
+    content: " registration fee";
+
+    display: block;
+
+    margin-top: 12px;
+
+    color: var(--text-muted);
+
+    font-size: 0.9rem;
+    font-weight: 500;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+
+/* What's included */
+
+.registration-includes {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.include-item {
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.include-number {
+    margin-bottom: 15px;
+
+    color: var(--purple-light);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+}
+
+.include-item h3 {
+    margin: 0 0 15px;
+
+    color: white;
+
+    font-size: 1.25rem;
+}
+
+.include-item p {
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+
+/* Registration action */
+
+.registration-action {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.registration-action p {
+    margin: 0 0 30px;
+}
+
+
+/* Actual registration button */
+
+.registration-button {
+    display: inline-block;
+
+    padding: 15px 32px;
+
+    color: white;
+
+    background: var(--purple);
+
+    border: 1px solid var(--purple-light);
+    border-radius: 5px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.registration-button:hover {
+    color: white;
+
+    background: var(--purple-light);
+
+    transform: translateY(-2px);
+}
+
+
+/* Coming soon placeholder */
+
+.registration-coming-soon {
+    display: inline-block;
+
+    padding: 14px 25px;
+
+    color: var(--text-muted);
+
+    background: rgba(255, 255, 255, 0.04);
+
+    border: 1px solid var(--border);
+
+    border-radius: 5px;
+
+    font-size: 0.9rem;
+}
+
+
+/* Contact */
+
+.registration-contact {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.registration-contact p {
+    margin: 0 0 25px;
+}
+
+
+/* ---------------------------------------------------------
+   REGISTRATION MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 700px) {
+
+    .registration-includes {
+        grid-template-columns: 1fr;
+    }
+
+    .include-item {
+        padding: 35px 25px;
+    }
+
+}
