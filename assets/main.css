@@ -1181,3 +1181,375 @@ footer {
     }
 
 }
+
+/* =========================================================
+   PROGRAMME PAGE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   INTRO
+   --------------------------------------------------------- */
+
+.programme-intro {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.programme-intro p {
+    margin: 0 0 24px;
+}
+
+.programme-intro p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   PROGRAMME STATUS
+   --------------------------------------------------------- */
+
+.programme-status {
+    display: table;
+
+    margin: 45px auto 0;
+
+    padding: 13px 26px;
+
+    color: white;
+
+    background: rgba(123, 44, 191, 0.18);
+
+    border: 1px solid var(--purple);
+
+    border-radius: 5px;
+
+    font-weight: 700;
+}
+
+
+/* ---------------------------------------------------------
+   WHAT TO EXPECT
+   --------------------------------------------------------- */
+
+.programme-items {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    border-top: 1px solid var(--border);
+    border-left: 1px solid var(--border);
+}
+
+.programme-item {
+    padding: 40px 30px;
+
+    text-align: center;
+
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.programme-item-number {
+    margin-bottom: 14px;
+
+    color: var(--purple-light);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+}
+
+.programme-item h3 {
+    margin: 0 0 15px;
+
+    color: white;
+
+    font-size: 1.2rem;
+}
+
+.programme-item p {
+    margin: 0;
+
+    color: var(--text-muted);
+
+    font-size: 0.95rem;
+    line-height: 1.65;
+}
+
+
+/* ---------------------------------------------------------
+   CATERING
+   --------------------------------------------------------- */
+
+.catering-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.catering-content p {
+    margin: 0 0 24px;
+}
+
+
+/* Conference dinner */
+
+.dinner-date {
+    max-width: 650px;
+
+    margin: 40px auto 0;
+
+    padding: 25px 30px;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.dinner-date span {
+    color: var(--text-muted);
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.dinner-date strong {
+    color: white;
+
+    font-size: 1.3rem;
+}
+
+
+/* ---------------------------------------------------------
+   DIETARY REQUIREMENTS
+   --------------------------------------------------------- */
+
+.dietary-content {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.dietary-content p {
+    margin: 0 0 24px;
+}
+
+.dietary-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   PROGRAMME MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 750px) {
+
+    .programme-items {
+        grid-template-columns: 1fr;
+    }
+
+    .programme-item {
+        padding: 35px 25px;
+    }
+
+    .dinner-date {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+/* =========================================================
+   CONTACT PAGE
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+   CONTACT
+   --------------------------------------------------------- */
+
+.contact-content {
+    max-width: 750px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.contact-content p {
+    margin: 0 0 28px;
+}
+
+
+/* ---------------------------------------------------------
+   DIRECTIONS
+   --------------------------------------------------------- */
+
+.directions-content {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.directions-content p {
+    margin: 0 0 24px;
+}
+
+.directions-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ---------------------------------------------------------
+   ADDRESS
+   --------------------------------------------------------- */
+
+.address {
+    max-width: 500px;
+
+    margin: 45px auto 0;
+
+    padding: 30px;
+
+    text-align: center;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.address-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--purple-light);
+
+    font-size: 0.8rem;
+    font-weight: 700;
+
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.address address {
+    color: white;
+
+    font-style: normal;
+
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   MAP
+   --------------------------------------------------------- */
+
+.map-content {
+    max-width: 1000px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.map-content > p {
+    max-width: 750px;
+
+    margin: 0 auto 35px;
+
+    color: var(--text-soft);
+}
+
+.map-wrapper {
+    width: 100%;
+
+    overflow: hidden;
+
+    border: 1px solid var(--border);
+}
+
+.map-wrapper iframe {
+    display: block;
+
+    width: 100%;
+
+    height: 450px;
+
+    border: 0;
+}
+
+
+/* ---------------------------------------------------------
+   FINAL CONTACT CTA
+   --------------------------------------------------------- */
+
+.contact-final {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: var(--text-soft);
+
+    text-align: center;
+}
+
+.contact-final p {
+    margin: 0 0 12px;
+}
+
+.contact-final .email-link {
+    margin-top: 25px;
+}
+
+
+/* ---------------------------------------------------------
+   CONTACT MOBILE
+   --------------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .map-wrapper iframe {
+        height: 350px;
+    }
+
+    .address {
+        padding: 25px 15px;
+    }
+
+}
