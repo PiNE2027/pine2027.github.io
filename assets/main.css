@@ -1553,3 +1553,14 @@ footer {
     }
 
 }
+
+.nav-logo {
+    height: 35px;
+    width: auto;
+    display: block;
+}
+
+.nav-brand {
+    display: inline-flex;
+    align-items: center;
+}
